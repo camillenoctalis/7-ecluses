@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <script>if(sessionStorage.getItem('site7ecluses_loaded'))document.documentElement.classList.add('skip-loader');</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visiter le domaine, Domaine des 7 Écluses</title>
+  <meta name="description" content="Visitez le Domaine des 7 Écluses : visite du chai, dégustation des vins, découverte du vignoble sur rendez-vous à Sallèles-d'Aude." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="favicon/favicon-7-ecluses.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div class="loader" aria-hidden="true">
+    <img src="logo/logo-7ecluses-blanc.png" alt="" class="loader__logo" />
+    <div class="loader__bar-wrap"><div class="loader__bar"></div></div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav" aria-label="Navigation principale">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand" aria-label="Accueil, Domaine des 7 Écluses">
+        <img src="logo/logo-7-ecluses-texte-blanc.png" alt="Domaine des 7 Écluses" class="nav-brand__logo" />
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="vins.html">Nos vins</a>
+        <a href="domaine.html">Le domaine</a>
+        <a href="equipe.html">La famille</a>
+        <a href="visiter.html" class="is-active">Visiter</a>
+      </div>
+      <button class="nav-burger" aria-expanded="false" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="nav-mobile" role="dialog" aria-label="Menu mobile">
+    <a href="index.html">Accueil</a>
+    <a href="vins.html">Nos vins</a>
+    <a href="domaine.html">Le domaine</a>
+    <a href="equipe.html">La famille</a>
+    <a href="visiter.html" class="is-active">Visiter</a>
+    <p class="nav-mobile__sub">06 71 60 57 61</p>
+  </div>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero">
+    <div class="page-hero__bg">
+      <img src="PHOTOS/La boutique/IMG_6726 2.HEIC" alt="Le caveau du domaine" onerror="this.src='PHOTOS/Usine/DSC_0033.JPG'" />
+    </div>
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__content">
+      <p class="eyebrow">Accueil &amp; Dégustation</p>
+      <h1>Visiter le domaine</h1>
+      <p>Visite du chai, dégustation au caveau, découverte du vignoble, venez à la rencontre de notre famille.</p>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- CONTACT + FORM -->
+    <section class="contact-section">
+      <div class="contact-inner">
+
+        <!-- INFOS -->
+        <div class="contact-info" data-reveal="left">
+          <div class="contact-card">
+            <h3>Ce que vous propose la visite</h3>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:12px;">
+              <li style="display:flex;gap:12px;align-items:flex-start;color:var(--slate);font-size:0.92rem;line-height:1.65;">
+                <span style="color:var(--burgundy);font-weight:700;flex-shrink:0;">→</span>
+                <span><strong style="color:var(--ink);">Visite du chai</strong>, Découvrez les installations de vinification, les cuves, les barriques et le processus de fabrication.</span>
+              </li>
+              <li style="display:flex;gap:12px;align-items:flex-start;color:var(--slate);font-size:0.92rem;line-height:1.65;">
+                <span style="color:var(--burgundy);font-weight:700;flex-shrink:0;">→</span>
+                <span><strong style="color:var(--ink);">Dégustation au caveau</strong>, Goûtez nos rouges, blancs et rosés avec les conseils de la famille, dans un cadre détendu.</span>
+              </li>
+              <li style="display:flex;gap:12px;align-items:flex-start;color:var(--slate);font-size:0.92rem;line-height:1.65;">
+                <span style="color:var(--burgundy);font-weight:700;flex-shrink:0;">→</span>
+                <span><strong style="color:var(--ink);">Visite du vignoble</strong>, Sur rendez-vous, partez à la découverte des parcelles et comprenez le terroir qui donne leur caractère à nos vins.</span>
+              </li>
+              <li style="display:flex;gap:12px;align-items:flex-start;color:var(--slate);font-size:0.92rem;line-height:1.65;">
+                <span style="color:var(--burgundy);font-weight:700;flex-shrink:0;">→</span>
+                <span><strong style="color:var(--ink);">Vente directe</strong>, Repartez avec vos bouteilles préférées, achetées au domaine sans intermédiaire.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-card">
+            <h3>Coordonnées</h3>
+            <address>
+              <strong>Jean François Ramond</strong><br/>
+              Domaine des 7 Écluses<br/>
+              26 Quai de Lorraine<br/>
+              11590 Sallèles-d'Aude<br/>
+              <a href="tel:+33671605761" class="c-phone">06 71 60 57 61</a>
+              <br/><a href="mailto:jean-francois.ramond@wanadoo.fr" style="font-size:0.82rem;color:var(--slate);">jean-francois.ramond@wanadoo.fr</a><br/>
+            </address>
+          </div>
+
+          <div class="contact-card">
+            <h3>Horaires d'ouverture</h3>
+            <div class="hours-list">
+              <div class="hour-block">
+                <strong>Novembre → Avril</strong>
+                <p>Mercredi, vendredi : 17h – 19h30<br/>Samedi : 10h – 12h30 et 17h – 19h30</p>
+              </div>
+              <div class="hour-block">
+                <strong>Mai – Juin et Septembre – Octobre</strong>
+                <p>Du lundi au samedi : 17h – 19h30<br/>(sauf dimanche)</p>
+              </div>
+              <div class="hour-block">
+                <strong>Juillet – Août</strong>
+                <p>Du lundi au samedi : 10h – 12h30 et 17h – 19h30<br/>(sauf dimanche)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FORM -->
+        <div class="contact-form-box" data-reveal="right">
+          <h2>Prendre rendez-vous</h2>
+          <p>Envoyez-nous votre demande et nous vous recontacterons rapidement pour organiser votre visite.</p>
+          <form class="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" autocomplete="family-name" />
+              </div>
+              <div class="form-field">
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" autocomplete="given-name" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="vous@exemple.fr" autocomplete="email" />
+              </div>
+              <div class="form-field">
+                <label for="tel">Téléphone</label>
+                <input type="tel" id="tel" name="telephone" placeholder="06 00 00 00 00" autocomplete="tel" />
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="demande">Type de visite</label>
+              <select id="demande" name="demande">
+                <option value="">Sélectionner…</option>
+                <option value="chai">Visite du chai</option>
+                <option value="degustation">Dégustation au caveau</option>
+                <option value="vignoble">Visite du vignoble</option>
+                <option value="complet">Visite complète (chai + vignoble + dégustation)</option>
+                <option value="renseignement">Demande de renseignement</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="message">Votre message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Indiquez votre disponibilité, le nombre de personnes, et toute question éventuelle…"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center;">Envoyer la demande</button>
+            <p class="form-note">Formulaire non connecté, version de démonstration.</p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PHOTOS BOUTIQUE -->
+    <section class="domain-section domain-section--muted">
+      <div class="domain-section-inner">
+        <div style="margin-bottom:44px;" data-reveal="up">
+          <p class="eyebrow">Le caveau</p>
+          <h2 style="font-family:'Playfair Display',serif;font-size:clamp(2rem,3.2vw,2.8rem);font-weight:700;line-height:1.05;margin-top:10px;">Un espace d'accueil chaleureux</h2>
+        </div>
+        <div class="domain-photo-mosaic" data-reveal="up">
+          <div class="mosaic-item mosaic-item--tall">
+            <img src="PHOTOS/La boutique/photo-7-ecluses-boutique1.jpg" alt="Sylvaine et Andréa Ramond au caveau" />
+          </div>
+          <div class="mosaic-item">
+            <img src="PHOTOS/La boutique/photo-7-ecluses-boutique2.jpg" alt="Pierre-Jean et Sylvaine Ramond au caveau" />
+          </div>
+          <div class="mosaic-item">
+            <img src="PHOTOS/Usine/DSCN4824.JPG" alt="Le domaine" />
+          </div>
+          <div class="mosaic-item">
+            <img src="PHOTOS/Vignes/RAW/_20090618_1766.JPG" alt="Vignoble" />
+          </div>
+          <div class="mosaic-item">
+            <img src="PHOTOS/Usine/DSC_0010.JPG" alt="Chai de vinification" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="logo/logo-7-ecluses-original-avec-fond.jpg" alt="Domaine des 7 Écluses" class="footer-brand__logo" />
+        <p class="footer-brand__tagline">Un domaine familial de père en fils, au cœur de Sallèles-d'Aude depuis plusieurs générations.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="vins.html">Nos vins</a></li>
+          <li><a href="domaine.html">Le domaine</a></li>
+          <li><a href="equipe.html">La famille</a></li>
+          <li><a href="visiter.html">Visiter</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Nos vins</h4>
+        <ul>
+          <li><a href="vins.html#rouges">Vins rouges</a></li>
+          <li><a href="vins.html#blancs">Vins blancs</a></li>
+          <li><a href="vins.html#roses">Vins rosés</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <address>
+          Jean François Ramond<br/>
+          26 Quai de Lorraine<br/>
+          11590 Sallèles-d'Aude<br/>
+          <a href="tel:+33671605761" class="footer-phone">06 71 60 57 61</a>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Domaine des 7 Écluses, Sallèles-d'Aude</span>
+      <a href="https://noctalis.digital" target="_blank" rel="noopener" class="footer-noctalis">
+        <span>Développé par</span>
+        <img src="Noctalis Dark Background PNG.png" alt="Noctalis" />
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

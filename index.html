@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <script>if(sessionStorage.getItem('site7ecluses_loaded'))document.documentElement.classList.add('skip-loader');</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Domaine des 7 Écluses, Vins de Sallèles-d'Aude</title>
+  <meta name="description" content="Domaine des 7 Écluses à Sallèles-d'Aude : vins rouges, blancs et rosés, transmission de père en fils au cœur du Canal du Midi." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="favicon/favicon-7-ecluses.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div class="loader" aria-hidden="true">
+    <img src="logo/logo-7ecluses-blanc.png" alt="" class="loader__logo" />
+    <div class="loader__bar-wrap"><div class="loader__bar"></div></div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav" aria-label="Navigation principale">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand" aria-label="Accueil, Domaine des 7 Écluses">
+        <img src="logo/logo-7-ecluses-texte-blanc.png" alt="Domaine des 7 Écluses" class="nav-brand__logo" />
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="is-active">Accueil</a>
+        <a href="vins.html">Nos vins</a>
+        <a href="domaine.html">Le domaine</a>
+        <a href="equipe.html">La famille</a>
+        <a href="visiter.html">Visiter</a>
+      </div>
+      <button class="nav-burger" aria-expanded="false" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="nav-mobile" role="dialog" aria-label="Menu mobile">
+    <a href="index.html" class="is-active">Accueil</a>
+    <a href="vins.html">Nos vins</a>
+    <a href="domaine.html">Le domaine</a>
+    <a href="equipe.html">La famille</a>
+    <a href="visiter.html">Visiter</a>
+    <p class="nav-mobile__sub">06 71 60 57 61</p>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Présentation du domaine">
+    <div class="hero__bg">
+      <img src="photos ramond bogda/photos-3-vins-7-ecluse-1.jpg" alt="Les vins du Domaine des 7 Écluses" />
+    </div>
+    <div class="hero__overlay"></div>
+    <img src="logo/logo-7-ecluses-texte-blanc.png" alt="" class="hero__logo-watermark" aria-hidden="true" />
+    <div class="hero__content">
+      <p class="hero__eyebrow">Sallèles-d'Aude · Canal du Midi · Aude</p>
+      <h1 class="hero__title">
+        <span class="hero__title-line"><span>Domaine des</span></span>
+        <span class="hero__title-line"><span>7 Écluses</span></span>
+      </h1>
+      <p class="hero__tagline">
+        Une histoire de père en fils, des vins sincères, un accueil chaleureux au cœur de l'Aude.
+      </p>
+      <div class="hero__actions">
+        <a href="vins.html" class="btn btn--light">Découvrir nos vins</a>
+        <a href="visiter.html" class="btn btn--ghost">Nous rendre visite</a>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">
+      <span>Défiler</span>
+      <div class="hero__scroll-bar"></div>
+    </div>
+  </section>
+
+  <!-- HISTOIRE / PÈRE EN FILS -->
+  <section class="section-story">
+    <div class="story-inner">
+      <div class="story__image-wrap" data-reveal="right">
+        <img src="PHOTOS/Équipes/photo pere en fils.JPG" alt="Père et fils au domaine des 7 Écluses" />
+      </div>
+      <div class="story__content" data-reveal="left">
+        <p class="eyebrow">Notre histoire</p>
+        <h2>De père en fils, une passion ancrée dans la terre</h2>
+        <blockquote class="story__quote">
+          "On ne fait pas du vin pour épater, on le fait pour partager."
+        </blockquote>
+        <p>
+          Depuis plusieurs générations, la famille Ramond cultive ses vignes sur les terres de Sallèles-d'Aude. Jean François Ramond perpétue une tradition viticole enracinée dans ce territoire entre canal, coteaux et plaine de l'Aude.
+        </p>
+        <p>
+          Ici, les vins ne sont pas une simple production, ils sont l'expression d'un attachement profond à ce sol, à ce paysage et à une manière d'être vigneron. Une histoire que l'on transmet de main en main.
+        </p>
+        <a href="equipe.html" class="btn btn--primary">Rencontrer la famille</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOS VINS, 3 FAMILLES -->
+  <section class="section-wines">
+    <div class="section-head" data-reveal="up">
+      <p class="eyebrow">Nos vins</p>
+      <h2>Trois familles, un seul territoire</h2>
+    </div>
+    <div class="wines-grid">
+      <a href="vins.html#rouges" class="wine-family wine-family--rouge" data-reveal="up" data-delay="1">
+        <div class="wine-family__bg">
+          <img src="PHOTOS/VINS/ROUGE/MERLOT/RAW/_20090618_1705.JPG" alt="Vins rouges du domaine" />
+        </div>
+        <div class="wine-family__overlay"></div>
+        <div class="wine-family__arrow">↗</div>
+        <div class="wine-family__body">
+          <span class="wine-family__tag">Rouges</span>
+          <div class="wine-family__name">Rouges</div>
+          <div class="wine-family__count">7 cuvées · Merlot, Cabernet, Vieille Vigne…</div>
+        </div>
+      </a>
+      <a href="vins.html#blancs" class="wine-family wine-family--blanc" data-reveal="up" data-delay="2">
+        <div class="wine-family__bg">
+          <img src="PHOTOS/VINS/BLANCS/CHARDONNAY/RAW/_20090618_1700.JPG" alt="Vins blancs du domaine" />
+        </div>
+        <div class="wine-family__overlay"></div>
+        <div class="wine-family__arrow">↗</div>
+        <div class="wine-family__body">
+          <span class="wine-family__tag">Blancs</span>
+          <div class="wine-family__name">Blancs</div>
+          <div class="wine-family__count">3 cuvées · Chardonnay, Ugni Blanc…</div>
+        </div>
+      </a>
+      <a href="vins.html#roses" class="wine-family wine-family--rose" data-reveal="up" data-delay="3">
+        <div class="wine-family__bg">
+          <img src="PHOTOS/VINS/ROSÉ/SYRAH/_20090618_1721.JPG" alt="Vins rosés du domaine" />
+        </div>
+        <div class="wine-family__overlay"></div>
+        <div class="wine-family__arrow">↗</div>
+        <div class="wine-family__body">
+          <span class="wine-family__tag">Rosés</span>
+          <div class="wine-family__name">Rosés</div>
+          <div class="wine-family__count">1 cuvée · Syrah</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- LE DOMAINE -->
+  <section class="section-domain">
+    <div class="domain-inner">
+      <div class="domain__photo" data-reveal="right">
+        <img src="PHOTOS/Usine/DSC_0030.JPG" alt="Le chai du domaine des 7 Écluses" />
+      </div>
+      <div class="domain__content" data-reveal="left">
+        <p class="eyebrow">Le domaine</p>
+        <h2>45 hectares entre coteaux et Canal du Midi</h2>
+        <p>
+          Implanté à Sallèles-d'Aude, à 10 km de Narbonne, le Domaine des 7 Écluses dispose d'un vignoble où diversité des cépages et richesse des terroirs se combinent sous le soleil de l'Aude.
+        </p>
+        <p>
+          Le chai, les vignes, le caveau, chaque espace du domaine témoigne d'un travail patient, exigeant et passionné, transmis de génération en génération.
+        </p>
+        <a href="domaine.html" class="btn btn--primary">Découvrir le domaine</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA VISITE -->
+  <section class="section-visit">
+    <div class="section-visit__bg">
+      <img src="PHOTOS/Usine/DSC_0033.JPG" alt="" aria-hidden="true" />
+    </div>
+    <img src="logo/logo-7ecluses-blanc.png" alt="" class="section-visit__logo" aria-hidden="true" />
+    <div class="visit-inner" data-reveal="up">
+      <p class="eyebrow">Venez nous voir</p>
+      <h2>Visitez le domaine et dégustez nos vins</h2>
+      <p>
+        Visite du chai, dégustation au caveau, découverte du vignoble, sur rendez-vous ou aux horaires d'ouverture, nous vous accueillons avec plaisir.
+      </p>
+      <div class="visit-details">
+        <div class="visit-detail">
+          <strong>Adresse</strong>
+          26 Quai de Lorraine, Sallèles-d'Aude
+        </div>
+        <div class="visit-detail">
+          <strong>Téléphone</strong>
+          <a href="tel:+33671605761" style="color:inherit;">06 71 60 57 61</a>
+        </div>
+      </div>
+      <div class="visit-hours">
+        <div class="visit-hour-block">
+          <strong>Novembre, Avril</strong>
+          <span>Mercredi &amp; Vendredi<br>17h – 19h30</span>
+          <span>Samedi<br>10h – 12h30 &amp; 17h – 19h30</span>
+        </div>
+        <div class="visit-hour-block">
+          <strong>Mai – Juin &amp; Sep – Oct</strong>
+          <span>Lundi au Samedi<br>17h – 19h30</span>
+        </div>
+        <div class="visit-hour-block">
+          <strong>Juillet, Août</strong>
+          <span>Lundi au Samedi<br>10h – 12h30 &amp; 17h – 19h30</span>
+        </div>
+      </div>
+      <a href="visiter.html" class="btn btn--light">Prendre rendez-vous</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="logo/logo-7-ecluses-original-avec-fond.jpg" alt="Domaine des 7 Écluses" class="footer-brand__logo" />
+        <p class="footer-brand__tagline">Un domaine familial de père en fils, au cœur de Sallèles-d'Aude depuis plusieurs générations.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="vins.html">Nos vins</a></li>
+          <li><a href="domaine.html">Le domaine</a></li>
+          <li><a href="equipe.html">La famille</a></li>
+          <li><a href="visiter.html">Visiter</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Nos vins</h4>
+        <ul>
+          <li><a href="vins.html#rouges">Vins rouges</a></li>
+          <li><a href="vins.html#blancs">Vins blancs</a></li>
+          <li><a href="vins.html#roses">Vins rosés</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <address>
+          Jean François Ramond<br/>
+          26 Quai de Lorraine<br/>
+          11590 Sallèles-d'Aude<br/>
+          <a href="tel:+33671605761" class="footer-phone">06 71 60 57 61</a>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Domaine des 7 Écluses, Sallèles-d'Aude</span>
+      <a href="https://noctalis.digital" target="_blank" rel="noopener" class="footer-noctalis">
+        <span>Développé par</span>
+        <img src="Noctalis Dark Background PNG.png" alt="Noctalis" />
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

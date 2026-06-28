@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <script>if(sessionStorage.getItem('site7ecluses_loaded'))document.documentElement.classList.add('skip-loader');</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nos vins, Domaine des 7 Écluses</title>
+  <meta name="description" content="Découvrez toute la gamme du Domaine des 7 Écluses : vins rouges, blancs et rosés issus du terroir de Sallèles-d'Aude." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="favicon/favicon-7-ecluses.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div class="loader" aria-hidden="true">
+    <img src="logo/logo-7ecluses-blanc.png" alt="" class="loader__logo" />
+    <div class="loader__bar-wrap"><div class="loader__bar"></div></div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav" aria-label="Navigation principale">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand" aria-label="Accueil, Domaine des 7 Écluses">
+        <img src="logo/logo-7-ecluses-texte-blanc.png" alt="Domaine des 7 Écluses" class="nav-brand__logo" />
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="vins.html" class="is-active">Nos vins</a>
+        <a href="domaine.html">Le domaine</a>
+        <a href="equipe.html">La famille</a>
+        <a href="visiter.html">Visiter</a>
+      </div>
+      <button class="nav-burger" aria-expanded="false" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="nav-mobile" role="dialog" aria-label="Menu mobile">
+    <a href="index.html">Accueil</a>
+    <a href="vins.html" class="is-active">Nos vins</a>
+    <a href="domaine.html">Le domaine</a>
+    <a href="equipe.html">La famille</a>
+    <a href="visiter.html">Visiter</a>
+    <p class="nav-mobile__sub">06 71 60 57 61</p>
+  </div>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero">
+    <div class="page-hero__bg">
+      <img src="photos ramond bogda/photos-3-vins-7-ecluse-4.jpg" alt="Nos vins" />
+    </div>
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__content">
+      <p class="eyebrow">La gamme</p>
+      <h1>Nos vins</h1>
+      <p>Rouges, blancs, rosés, douze cuvées nées du terroir de l'Aude, à découvrir au caveau.</p>
+    </div>
+  </header>
+
+  <!-- TABS -->
+  <div class="wine-tabs">
+    <div class="wine-tabs-inner">
+      <button class="tab-btn is-active" data-tab="rouges">Vins Rouges</button>
+      <button class="tab-btn" data-tab="blancs">Vins Blancs</button>
+      <button class="tab-btn" data-tab="roses">Vins Rosés</button>
+      <button class="tab-btn" data-tab="liquoreux">Liquoreux</button>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ============ ROUGES ============ -->
+    <div class="tab-content is-active" data-tab="rouges">
+      <div class="tab-section">
+        <div class="tab-header" data-reveal="up">
+          <p class="eyebrow">Vins Rouges</p>
+          <h2>4 cuvées rouges, entre rondeur et caractère</h2>
+          <p>Du Val de Cesse à la cuvée Pierre Jean élevée en fûts, nos rouges expriment la générosité du terroir audois.</p>
+        </div>
+        <div class="wine-list">
+
+          <article class="wine-card" data-reveal="up" data-delay="1">
+            <div class="wine-card__photo wine-card__photo--rouge">
+              <img src="PHOTOS/VINS/ROUGE/PJR/RAW/les-futs-de-pierre-jean-7-ecluses.jpg" alt="Les Fûts de Pierre Jean, Vin Rouge" />
+            </div>
+            <div class="wine-card__body">
+              <span class="wine-card__cat wine-card__cat--rouge">Vin Rouge · Cuvée Prestige</span>
+              <h3 class="wine-card__name">Les Fûts de Pierre Jean</h3>
+              <p class="wine-card__desc">
+                Élevé en fûts de chêne, c'est notre cuvée de prestige. Complexe, généreux, marqué par le temps passé en barrique. Un vin qui porte le prénom de père en fils, comme une signature.
+              </p>
+              <div class="wine-card__tags">
+                <span class="wine-tag">Élevage bois</span>
+                <span class="wine-tag">Complexe</span>
+                <span class="wine-tag">Prestige</span>
+              </div>
+              <span class="wine-card__avail">Disponible au caveau</span>
+            </div>
+          </article>
+
+          <article class="wine-card" data-reveal="up" data-delay="2">
+            <div class="wine-card__photo wine-card__photo--rouge">
+              <img src="PHOTOS/VINS/ROUGE/VAL DE CESSE/RAW/vin-rouge-val-de-cesse-7-ecluses.jpg" alt="Val de Cesse" />
+            </div>
+            <div class="wine-card__body">
+              <span class="wine-card__cat wine-card__cat--rouge">Vin Rouge</span>
+              <h3 class="wine-card__name">Val de Cesse</h3>
+              <p class="wine-card__desc">
+                Expression directe du terroir audois. Un rouge de caractère, sincère et bien construit, qui porte le nom de la vallée qui borde nos vignes. Franc en attaque, généreux en fin de bouche.
+              </p>
+              <div class="wine-card__tags">
+                <span class="wine-tag">Terroir</span>
+                <span class="wine-tag">Équilibré</span>
+                <span class="wine-tag">Charnu</span>
+              </div>
+              <span class="wine-card__avail">Disponible au caveau</span>
+            </div>
+          </article>
+
+          <article class="wine-card" data-reveal="up" data-delay="3">
+            <div class="wine-card__photo wine-card__photo--rouge">
+              <img src="PHOTOS/VINS/ROUGE/VIELLE-VIGNE/RAW/vielle-vignes-7-ecluses.jpg" alt="Vieille Vigne" />
+            </div>
+            <div class="wine-card__body">
+              <span class="wine-card__cat wine-card__cat--rouge">Vin Rouge</span>
+              <h3 class="wine-card__name">Vieille Vigne</h3>
+              <p class="wine-card__desc">
+                Les vieilles vignes livrent l'essentiel : concentration, profondeur et cette typicité propre aux vieux ceps. Une cuvée enracinée, au caractère plus affirmé, qui demande qu'on lui laisse le temps de s'ouvrir.
+              </p>
+              <div class="wine-card__tags">
+                <span class="wine-tag">Vieilles vignes</span>
+                <span class="wine-tag">Concentré</span>
+                <span class="wine-tag">Profond</span>
+              </div>
+              <span class="wine-card__avail">Disponible au caveau</span>
+            </div>
+          </article>
+
+          <article class="wine-card" data-reveal="up" data-delay="1">
+            <div class="wine-card__photo wine-card__photo--rouge">
+              <img src="PHOTOS/VINS/ROUGE/CABERNET-SAUVIGNON/RAW/_20090618_1750.JPG" alt="Cabernet-Sauvignon" />
+            </div>
+            <div class="wine-card__body">
+              <span class="wine-card__cat wine-card__cat--rouge">Vin Rouge</span>
+              <h3 class="wine-card__name">Cabernet-Sauvignon</h3>
+              <p class="wine-card__desc">
+                Structuré et élégant, ce Cabernet garde sa franchise. Un vin de garde accessible, sans chichi, qui exprime avec justesse les tanins caractéristiques du cépage sur notre terroir argilo-calcaire.
+              </p>
+              <div class="wine-card__tags">
+                <span class="wine-tag">Cabernet-Sauvignon</span>
+                <span class="wine-tag">Structuré</span>
+                <span class="wine-tag">Tannique</span>
+              </div>
+              <span class="wine-card__avail">Disponible au caveau</span>
+            </div>
+          </article>
+
+
+        </div>
+
+        <div class="wines-cta" data-reveal="up">
+          <p>Tous nos vins sont disponibles à la vente directe au caveau, au domaine. Venez les découvrir lors d'une dégustation.</p>
+          <a href="visiter.html" class="btn btn--primary">Prendre rendez-vous</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ BLANCS ============ -->
+    <div class="tab-content" data-tab="blancs">
+      <div class="tab-section">
+        <div class="tab-header" data-reveal="up">
+          <p class="eyebrow">Vins Blancs</p>
+          <h2>3 cuvées blanches, fraîcheur et lumière</h2>
+          <p>Du Chardonnay lumineux à la cuvée Pierre Jean ample et complexe, nos blancs reflètent la générosité ensoleillée de l'Aude.</p>
+        </div>
+        <div class="wine-list">
+
+          <article class="wine-card" data-reveal="up" data-delay="1">
+            <div class="wine-card__photo wine-card__photo--blanc">
+              <img src="PHOTOS/VINS/BLANCS/PJR/RAW/vin-blanc-fut-pierre-jean.jpg" alt="Les Fûts de Pierre Jean, Vin Blanc" />
+            </div>
+            <div class="wine-card__body">
+              <span class="wine-card__cat wine-card__cat--blanc">Vin Blanc · Cuvée Prestige</span>
+              <h3 class="wine-card__name">Les Fûts de Pierre Jean</h3>
+              <p class="wine-card__desc">
+                Complexité et volume en bouche : ce blanc élevé en fûts de chêne s'épanouit sur les plats de caractère. Une expression plus ample et boisée, signature de notre engagement dans la qualité.
+              </p>
+              <div class="wine-card__tags">
+                <span class="wine-tag">Élevage bois</span>
+                <span class="wine-tag">Ample</span>
+                <span class="wine-tag">Prestige</span>
+              </div>
+              <span class="wine-card__avail">Disponible au caveau</span>
+            </div>
+          </article>
+
+          <article class="wine-card" data-reveal="up" data-delay="2">
+            <div class="wine-card__photo wine-card__photo--blanc">
+              <img src="PHOTOS/VINS/BLANCS/CHARDONNAY/RAW/_20090618_1700.JPG" alt="Chardonnay" />
+            </div>
+            <div class="wine-card__body">
+              <span class="wine-card__cat wine-card__cat--blanc">Vin Blanc</span>
+              <h3 class="wine-card__name">Chardonnay</h3>
+              <p class="wine-card__desc">
+                Lumineux et fruité, avec une belle fraîcheur. Notre blanc de référence pour les beaux jours. Un Chardonnay expressif qui s'accorde aussi bien à l'apéritif qu'avec les poissons et crustacés.
+              </p>
+              <div class="wine-card__tags">
+                <span class="wine-tag">Chardonnay</span>
+                <span class="wine-tag">Fruité</span>
+                <span class="wine-tag">Frais</span>
+              </div>
+              <span class="wine-card__avail">Disponible au caveau</span>
+            </div>
+          </article>
+
+          <article class="wine-card" data-reveal="up" data-delay="3">
+            <div class="wine-card__photo wine-card__photo--blanc">
+              <img src="PHOTOS/VINS/BLANCS/UGNI BLANC/RAW/_20090618_1716.JPG" alt="Ugni Blanc" />
+            </div>
+            <div class="wine-card__body">
+              <span class="wine-card__cat wine-card__cat--blanc">Vin Blanc</span>
+              <h3 class="wine-card__name">Ugni Blanc</h3>
+              <p class="wine-card__desc">
+                Vif, simple et authentique. Un blanc de soif qui traduit avec franchise nos terroirs chauds. Légèrement floral, avec une acidité nette qui en fait un excellent vin de table au quotidien.
+              </p>
+              <div class="wine-card__tags">
+                <span class="wine-tag">Ugni Blanc</span>
+                <span class="wine-tag">Vif</span>
+                <span class="wine-tag">Désaltérant</span>
+              </div>
+              <span class="wine-card__avail">Disponible au caveau</span>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="wines-cta" data-reveal="up">
+          <p>Nos blancs se dégustent sur place au caveau du domaine. Venez les découvrir frais, dans leur meilleur état.</p>
+          <a href="visiter.html" class="btn btn--primary">Prendre rendez-vous</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ ROSÉS ============ -->
+    <div class="tab-content" data-tab="roses">
+      <div class="tab-section">
+        <div class="tab-header" data-reveal="up">
+          <p class="eyebrow">Vins Rosés</p>
+          <h2>1 cuvée rosée, fraîcheur du Midi</h2>
+          <p>Notre rosé de Syrah incarne l'esprit estival de l'Aude, gourmand, coloré et sincère.</p>
+        </div>
+        <div class="wine-list">
+
+          <article class="wine-card" data-reveal="up" data-delay="1">
+            <div class="wine-card__photo wine-card__photo--rose">
+              <img src="PHOTOS/VINS/ROSÉ/SYRAH/_20090618_1721.JPG" alt="Syrah" />
+            </div>
+            <div class="wine-card__body">
+              <span class="wine-card__cat wine-card__cat--rose">Vin Rosé</span>
+              <h3 class="wine-card__name">Syrah</h3>
+              <p class="wine-card__desc">
+                Une expression plus structurée de notre gamme rosé. Toujours dans la gourmandise, mais avec du fond et une belle persistance aromatique. Un rosé gastronomique, généreux et sincère.
+              </p>
+              <div class="wine-card__tags">
+                <span class="wine-tag">Syrah</span>
+                <span class="wine-tag">Structuré</span>
+                <span class="wine-tag">Gastronomique</span>
+              </div>
+              <span class="wine-card__avail">Disponible au caveau</span>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="wines-cta" data-reveal="up">
+          <p>Notre rosé est parfait servi bien frais. Venez le déguster au caveau, nous vous accueillons avec plaisir.</p>
+          <a href="visiter.html" class="btn btn--primary">Prendre rendez-vous</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ LIQUOREUX ============ -->
+    <div class="tab-content" data-tab="liquoreux">
+      <div class="tab-section">
+        <div class="tab-header" data-reveal="up">
+          <p class="eyebrow">Vin Liquoreux</p>
+          <h2>Andréa, le vin d'automne</h2>
+          <p>Une cuvée à part, née des vendanges tardives et de la générosité de la saison. Andréa porte le prénom de la fille de Jean François, un vin doux, chaleureux, fait pour les moments qui durent.</p>
+        </div>
+        <div class="wine-list">
+
+          <article class="wine-card wine-card--featured" data-reveal="up" data-delay="1">
+            <div class="wine-card__photo wine-card__photo--liquoreux">
+              <img src="PHOTOS/VINS/ANDRÉA/RAW/_20090618_1767.JPG" alt="Andréa, vin liquoreux" />
+            </div>
+            <div class="wine-card__body">
+              <span class="wine-card__cat wine-card__cat--liquoreux">Vin Liquoreux · Vendanges tardives</span>
+              <h3 class="wine-card__name">Andréa</h3>
+              <p class="wine-card__desc">
+                Doux et chaleureux, Andréa est un vin d'automne dans l'âme. Né de raisins récoltés tardivement, il développe des arômes de fruits confits, de miel et d'épices douces. À déguster frais, en apéritif ou sur un dessert aux fruits.
+              </p>
+              <div class="wine-card__tags">
+                <span class="wine-tag">Vendanges tardives</span>
+                <span class="wine-tag">Doux</span>
+                <span class="wine-tag">Fruits confits</span>
+                <span class="wine-tag">Automne</span>
+              </div>
+              <span class="wine-card__avail">Disponible au caveau</span>
+            </div>
+          </article>
+
+        </div>
+        <div class="wines-cta" data-reveal="up">
+          <p>Andréa se déguste légèrement frais, à l'apéritif ou en fin de repas. Une exclusivité du domaine, disponible directement au caveau.</p>
+          <a href="visiter.html" class="btn btn--primary">Venir au caveau</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="logo/logo-7-ecluses-original-avec-fond.jpg" alt="Domaine des 7 Écluses" class="footer-brand__logo" />
+        <p class="footer-brand__tagline">Un domaine familial de père en fils, au cœur de Sallèles-d'Aude depuis plusieurs générations.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="vins.html">Nos vins</a></li>
+          <li><a href="domaine.html">Le domaine</a></li>
+          <li><a href="equipe.html">La famille</a></li>
+          <li><a href="visiter.html">Visiter</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Nos vins</h4>
+        <ul>
+          <li><a href="vins.html#rouges">Vins rouges</a></li>
+          <li><a href="vins.html#blancs">Vins blancs</a></li>
+          <li><a href="vins.html#roses">Vins rosés</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <address>
+          Jean François Ramond<br/>
+          26 Quai de Lorraine<br/>
+          11590 Sallèles-d'Aude<br/>
+          <a href="tel:+33671605761" class="footer-phone">06 71 60 57 61</a>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Domaine des 7 Écluses, Sallèles-d'Aude</span>
+      <a href="https://noctalis.digital" target="_blank" rel="noopener" class="footer-noctalis">
+        <span>Développé par</span>
+        <img src="Noctalis Dark Background PNG.png" alt="Noctalis" />
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
