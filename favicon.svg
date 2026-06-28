@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Fond crème -->
+  <rect width="32" height="32" fill="#f4edd8"/>
+  <!-- Bordure fine bordeaux -->
+  <rect x="1.5" y="1.5" width="29" height="29" fill="none" stroke="#5e1826" stroke-width="1"/>
+  <!-- "7" central -->
+  <text
+    x="16"
+    y="25"
+    text-anchor="middle"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-weight="700"
+    font-style="italic"
+    font-size="23"
+    fill="#5e1826"
+    letter-spacing="-1"
+  >7</text>
+</svg>
