@@ -8,8 +8,10 @@
   <meta name="description" content="Visitez le Domaine des 7 Écluses : visite du chai, dégustation des vins, découverte du vignoble sur rendez-vous à Sallèles-d'Aude." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&family=Raleway:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&family=Raleway:wght@300;400;500;600;700&display=swap" /></noscript>
   <link rel="icon" type="image/png" href="favicon/favicon-7-ecluses.png" />
+  <link rel="preload" href="img/boutique1.jpg" as="image" fetchpriority="high" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -52,7 +54,7 @@
   <!-- PAGE HERO -->
   <header class="page-hero">
     <div class="page-hero__bg">
-      <img src="PHOTOS/La boutique/IMG_6726 2.HEIC" alt="Le caveau du domaine" onerror="this.src='PHOTOS/Usine/DSC_0033.JPG'" />
+      <img fetchpriority="high" decoding="async" src="img/boutique1.jpg" alt="Le caveau du domaine" />
     </div>
     <div class="page-hero__overlay"></div>
     <div class="page-hero__content">
@@ -180,19 +182,19 @@
         </div>
         <div class="domain-photo-mosaic" data-reveal="up">
           <div class="mosaic-item mosaic-item--tall">
-            <img src="PHOTOS/La boutique/photo-7-ecluses-boutique1.jpg" alt="Sylvaine et Andréa Ramond au caveau" />
+            <img loading="lazy" decoding="async" src="img/boutique1.jpg" alt="Sylvaine et Andréa Ramond au caveau" />
           </div>
           <div class="mosaic-item">
-            <img src="PHOTOS/La boutique/photo-7-ecluses-boutique2.jpg" alt="Pierre-Jean et Sylvaine Ramond au caveau" />
+            <img loading="lazy" decoding="async" src="img/boutique2.jpg" alt="Pierre-Jean et Sylvaine Ramond au caveau" />
           </div>
           <div class="mosaic-item">
-            <img src="PHOTOS/Usine/DSCN4824.JPG" alt="Le domaine" />
+            <img loading="lazy" decoding="async" src="img/usine.jpg" alt="Le domaine" />
           </div>
           <div class="mosaic-item">
-            <img src="PHOTOS/Vignes/RAW/_20090618_1766.JPG" alt="Vignoble" />
+            <img loading="lazy" decoding="async" src="PHOTOS/Vignes/RAW/_20090618_1766.JPG" alt="Vignoble" />
           </div>
           <div class="mosaic-item">
-            <img src="PHOTOS/Usine/DSC_0010.JPG" alt="Chai de vinification" />
+            <img loading="lazy" decoding="async" src="img/chai3.jpg" alt="Chai de vinification" />
           </div>
         </div>
       </div>

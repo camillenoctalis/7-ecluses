@@ -8,8 +8,10 @@
   <meta name="description" content="Découvrez toute la gamme du Domaine des 7 Écluses : vins rouges, blancs et rosés issus du terroir de Sallèles-d'Aude." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&family=Raleway:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&family=Raleway:wght@300;400;500;600;700&display=swap" /></noscript>
   <link rel="icon" type="image/png" href="favicon/favicon-7-ecluses.png" />
+  <link rel="preload" href="img/hero-vins.jpg" as="image" fetchpriority="high" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -52,7 +54,7 @@
   <!-- PAGE HERO -->
   <header class="page-hero">
     <div class="page-hero__bg">
-      <img src="photos ramond bogda/photos-3-vins-7-ecluse-4.jpg" alt="Nos vins" />
+      <img fetchpriority="high" decoding="async" src="img/hero-vins.jpg" alt="Nos vins" />
     </div>
     <div class="page-hero__overlay"></div>
     <div class="page-hero__content">
@@ -86,7 +88,7 @@
 
           <article class="wine-card" data-reveal="up" data-delay="1">
             <div class="wine-card__photo wine-card__photo--rouge">
-              <img src="PHOTOS/VINS/ROUGE/PJR/RAW/les-futs-de-pierre-jean-7-ecluses.jpg" alt="Les Fûts de Pierre Jean, Vin Rouge" />
+              <img loading="lazy" decoding="async" src="img/vin-rouge-pjr.jpg" alt="Les Fûts de Pierre Jean, Vin Rouge" />
             </div>
             <div class="wine-card__body">
               <span class="wine-card__cat wine-card__cat--rouge">Vin Rouge · Cuvée Prestige</span>
@@ -105,7 +107,7 @@
 
           <article class="wine-card" data-reveal="up" data-delay="2">
             <div class="wine-card__photo wine-card__photo--rouge">
-              <img src="PHOTOS/VINS/ROUGE/VAL DE CESSE/RAW/vin-rouge-val-de-cesse-7-ecluses.jpg" alt="Val de Cesse" />
+              <img loading="lazy" decoding="async" src="img/vin-rouge-val-de-cesse.jpg" alt="Val de Cesse" />
             </div>
             <div class="wine-card__body">
               <span class="wine-card__cat wine-card__cat--rouge">Vin Rouge</span>
@@ -124,7 +126,7 @@
 
           <article class="wine-card" data-reveal="up" data-delay="3">
             <div class="wine-card__photo wine-card__photo--rouge">
-              <img src="PHOTOS/VINS/ROUGE/VIELLE-VIGNE/RAW/vielle-vignes-7-ecluses.jpg" alt="Vieille Vigne" />
+              <img loading="lazy" decoding="async" src="img/vin-rouge-vieille-vigne.jpg" alt="Vieille Vigne" />
             </div>
             <div class="wine-card__body">
               <span class="wine-card__cat wine-card__cat--rouge">Vin Rouge</span>
@@ -143,7 +145,7 @@
 
           <article class="wine-card" data-reveal="up" data-delay="1">
             <div class="wine-card__photo wine-card__photo--rouge">
-              <img src="PHOTOS/VINS/ROUGE/CABERNET-SAUVIGNON/RAW/_20090618_1750.JPG" alt="Cabernet-Sauvignon" />
+              <img loading="lazy" decoding="async" src="img/vin-rouge-cabernet.jpg" alt="Cabernet-Sauvignon" />
             </div>
             <div class="wine-card__body">
               <span class="wine-card__cat wine-card__cat--rouge">Vin Rouge</span>
@@ -182,7 +184,7 @@
 
           <article class="wine-card" data-reveal="up" data-delay="1">
             <div class="wine-card__photo wine-card__photo--blanc">
-              <img src="PHOTOS/VINS/BLANCS/PJR/RAW/vin-blanc-fut-pierre-jean.jpg" alt="Les Fûts de Pierre Jean, Vin Blanc" />
+              <img loading="lazy" decoding="async" src="img/vin-blanc-pjr.jpg" alt="Les Fûts de Pierre Jean, Vin Blanc" />
             </div>
             <div class="wine-card__body">
               <span class="wine-card__cat wine-card__cat--blanc">Vin Blanc · Cuvée Prestige</span>
@@ -201,7 +203,7 @@
 
           <article class="wine-card" data-reveal="up" data-delay="2">
             <div class="wine-card__photo wine-card__photo--blanc">
-              <img src="PHOTOS/VINS/BLANCS/CHARDONNAY/RAW/_20090618_1700.JPG" alt="Chardonnay" />
+              <img loading="lazy" decoding="async" src="img/vin-blanc-chardonnay.jpg" alt="Chardonnay" />
             </div>
             <div class="wine-card__body">
               <span class="wine-card__cat wine-card__cat--blanc">Vin Blanc</span>
@@ -220,7 +222,7 @@
 
           <article class="wine-card" data-reveal="up" data-delay="3">
             <div class="wine-card__photo wine-card__photo--blanc">
-              <img src="PHOTOS/VINS/BLANCS/UGNI BLANC/RAW/_20090618_1716.JPG" alt="Ugni Blanc" />
+              <img loading="lazy" decoding="async" src="img/vin-blanc-ugni.jpg" alt="Ugni Blanc" />
             </div>
             <div class="wine-card__body">
               <span class="wine-card__cat wine-card__cat--blanc">Vin Blanc</span>
@@ -258,7 +260,7 @@
 
           <article class="wine-card" data-reveal="up" data-delay="1">
             <div class="wine-card__photo wine-card__photo--rose">
-              <img src="PHOTOS/VINS/ROSÉ/SYRAH/_20090618_1721.JPG" alt="Syrah" />
+              <img loading="lazy" decoding="async" src="img/vin-rose-syrah.jpg" alt="Syrah" />
             </div>
             <div class="wine-card__body">
               <span class="wine-card__cat wine-card__cat--rose">Vin Rosé</span>
@@ -296,7 +298,7 @@
 
           <article class="wine-card wine-card--featured" data-reveal="up" data-delay="1">
             <div class="wine-card__photo wine-card__photo--liquoreux">
-              <img src="PHOTOS/VINS/ANDRÉA/RAW/_20090618_1767.JPG" alt="Andréa, vin liquoreux" />
+              <img loading="lazy" decoding="async" src="img/vin-andrea.jpg" alt="Andréa, vin liquoreux" />
             </div>
             <div class="wine-card__body">
               <span class="wine-card__cat wine-card__cat--liquoreux">Vin Liquoreux · Vendanges tardives</span>

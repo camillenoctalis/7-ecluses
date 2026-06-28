@@ -8,8 +8,10 @@
   <meta name="description" content="Le Domaine des 7 Écluses à Sallèles-d'Aude : 45 hectares entre coteaux ensoleillés, plaine de l'Aude et bords du Canal du Midi." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&family=Raleway:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&family=Raleway:wght@300;400;500;600;700&display=swap" /></noscript>
   <link rel="icon" type="image/png" href="favicon/favicon-7-ecluses.png" />
+  <link rel="preload" href="img/hero-domaine.jpg" as="image" fetchpriority="high" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -52,7 +54,7 @@
   <!-- PAGE HERO -->
   <header class="page-hero">
     <div class="page-hero__bg">
-      <img src="PHOTOS/Vignes/RAW/_20090618_1695.JPG" alt="Les vignes du domaine" />
+      <img fetchpriority="high" decoding="async" src="img/hero-domaine.jpg" alt="Les vignes du domaine" />
     </div>
     <div class="page-hero__overlay"></div>
     <div class="page-hero__content">
@@ -118,19 +120,19 @@
         <!-- PHOTO MOSAIC -->
         <div class="domain-photo-mosaic">
           <div class="mosaic-item mosaic-item--tall" data-reveal="up" data-delay="1">
-            <img src="PHOTOS/Vignes/RAW/_20090618_1694.JPG" alt="Vignes du domaine" />
+            <img loading="lazy" decoding="async" src="img/vignes1.jpg" alt="Vignes du domaine" />
           </div>
           <div class="mosaic-item" data-reveal="up" data-delay="2">
-            <img src="PHOTOS/Vignes/RAW/_20090618_1712.JPG" alt="Rangs de vignes" />
+            <img loading="lazy" decoding="async" src="img/vignes2.jpg" alt="Rangs de vignes" />
           </div>
           <div class="mosaic-item" data-reveal="up" data-delay="3">
-            <img src="PHOTOS/Vignes/RAW/_20090618_1713.JPG" alt="Paysage viticole" />
+            <img loading="lazy" decoding="async" src="img/vignes3.jpg" alt="Paysage viticole" />
           </div>
           <div class="mosaic-item" data-reveal="up" data-delay="2">
-            <img src="PHOTOS/VILLAGE/DSCN3361.JPG" alt="Sallèles-d'Aude" />
+            <img loading="lazy" decoding="async" src="img/village.jpg" alt="Sallèles-d'Aude" />
           </div>
           <div class="mosaic-item" data-reveal="up" data-delay="3">
-            <img src="PHOTOS/Vignes/RAW/_20090618_1765.JPG" alt="Vendanges" />
+            <img loading="lazy" decoding="async" src="img/vignes5.jpg" alt="Vendanges" />
           </div>
         </div>
       </div>
@@ -180,7 +182,7 @@
       <div class="domain-section-inner">
         <div class="domain-text-grid">
           <div class="chai-photo" data-reveal="left">
-            <img src="PHOTOS/Usine/DSC_0007.JPG" alt="Le chai du domaine des 7 Écluses" />
+            <img loading="lazy" decoding="async" src="img/chai2.jpg" alt="Le chai du domaine des 7 Écluses" />
           </div>
           <div class="text-content" data-reveal="right">
             <p class="eyebrow">Le chai</p>
@@ -206,7 +208,7 @@
         <div class="cepages-showcase" data-reveal="up">
           <!-- Photo pleine largeur -->
           <div class="cepages-showcase__photo">
-            <img src="photos ramond bogda/photos-3-vins-7-ecluse-1.jpg" alt="Les trois vins du Domaine des 7 Écluses au coucher du soleil" />
+            <img loading="lazy" decoding="async" src="img/hero-home.jpg" alt="Les trois vins du Domaine des 7 Écluses au coucher du soleil" />
             <div class="cepages-showcase__photo-overlay"></div>
             <div class="cepages-header">
               <p class="eyebrow">Nos cépages</p>
