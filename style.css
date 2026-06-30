@@ -27,7 +27,7 @@
    RESET
    ============================================================ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 body {
   font-family: 'Raleway', sans-serif;
   color: var(--ink);
@@ -1184,6 +1184,7 @@ ul { list-style: none; }
 .tab-btn[data-tab="rouges"].is-active { background: rgba(94,24,38,0.1); border-color: var(--burgundy); color: var(--burgundy); }
 .tab-btn[data-tab="blancs"].is-active { background: rgba(184,138,68,0.1); border-color: var(--gold); color: #7a5e1c; }
 .tab-btn[data-tab="roses"].is-active { background: rgba(160,80,110,0.1); border-color: var(--rose-color); color: var(--rose-color); }
+.tab-btn[data-tab="liquoreux"].is-active { background: rgba(192,136,64,0.1); border-color: #c08840; color: #8a5c10; }
 
 .tab-content { display: none; padding: 72px 0; }
 .tab-content.is-active { display: block; }
@@ -1473,6 +1474,18 @@ ul { list-style: none; }
   .tarifs-row { grid-template-columns: 1fr 100px; }
   .tarifs-bib__grid { grid-template-columns: 1fr; }
   .tarifs-bib__item { flex-direction: row; align-items: center; justify-content: space-between; }
+}
+
+/* chai photo block (domaine page section 2) */
+.chai-photo {
+  overflow: hidden;
+  position: relative;
+}
+.chai-photo img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  display: block;
 }
 
 /* ============================================================
@@ -1925,10 +1938,12 @@ ul { list-style: none; }
 @media (max-width: 900px) {
   .story-inner { grid-template-columns: 1fr; gap: 52px; }
   .story__image-wrap img { height: 420px; }
+  .story__image-wrap::before, .story__image-wrap::after { display: none; }
   .wines-grid { grid-template-columns: 1fr; gap: 16px; }
   .wine-family { aspect-ratio: 16/9; max-height: 300px; }
   .domain-inner { grid-template-columns: 1fr; gap: 52px; }
   .domain-text-grid { grid-template-columns: 1fr; gap: 48px; }
+  .chai-photo img { height: 360px; }
   .team-hero-grid { grid-template-columns: 1fr; gap: 48px; }
   .team-photo img { height: 400px; }
   .values-grid { grid-template-columns: 1fr 1fr; }
@@ -1948,7 +1963,7 @@ ul { list-style: none; }
   /* Nav */
   .nav-links { display: none; }
   .nav-burger { display: flex; }
-  .nav-brand__logo { height: 40px; }
+  .nav-brand__logo { height: 38px; max-width: 180px; }
 
   /* Hero — full width, pas de découpage à 48% */
   .hero__content {
@@ -1984,6 +1999,7 @@ ul { list-style: none; }
   .wine-card__photo img { min-height: 200px; height: 220px; width: 100%; }
   .wine-card__body { padding: 22px; gap: 12px; }
   .wine-card__name { font-size: 1.8rem; }
+  .wine-card__desc { max-width: 100%; }
 
   /* Tabs vins — scroll horizontal */
   .wine-tabs-inner {
@@ -2026,16 +2042,19 @@ ul { list-style: none; }
 }
 
 @media (max-width: 480px) {
-  :root { --container: calc(100% - 20px); }
+  :root { --container: calc(100% - 32px); }
 
   /* Hero */
   .hero { min-height: 100svh; }
   .hero__content { padding-left: 16px; padding-right: 16px; }
-  .hero__title { font-size: clamp(2.4rem, 11vw, 3.8rem); line-height: 0.92; }
+  .hero__title { font-size: clamp(2.4rem, 11vw, 3.8rem); line-height: 0.96; }
   .hero__tagline { font-size: 0.95rem; }
   .hero__actions { flex-direction: column; gap: 10px; margin-top: 22px; }
-  .btn { width: 100%; justify-content: center; }
+  .hero__actions .btn { width: 100%; justify-content: center; }
   .hero__scroll { display: none; }
+
+  /* Nav */
+  .nav-brand__logo { height: 32px; max-width: 150px; }
 
   /* Page hero sous-pages */
   .page-hero { height: 40vh; min-height: 260px; }
@@ -2099,6 +2118,10 @@ ul { list-style: none; }
   /* Contact */
   .contact-form-box { padding: 22px 16px; }
   .contact-card { padding: 20px; }
+  /* Prevent iOS Safari zoom on input focus (font-size must be ≥ 16px) */
+  .form-field input,
+  .form-field textarea,
+  .form-field select { font-size: 16px; }
 
   /* Footer */
   .site-footer { padding: 48px 0 24px; }

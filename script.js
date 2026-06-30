@@ -110,7 +110,7 @@ tabBtns.forEach(btn => {
 /* Handle hash from other pages e.g. vins.html#rouges */
 (function initTabFromHash() {
   const hash = window.location.hash.replace('#', '');
-  const valid = ['rouges', 'blancs', 'roses'];
+  const valid = ['rouges', 'blancs', 'roses', 'liquoreux'];
   if (valid.includes(hash)) activateTab(hash);
 })();
 
